@@ -8240,6 +8240,16 @@ body {
   border-bottom: none;
   padding: 10px 0px;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1); }
+  .navbar .navbar-toggle {
+    border: 0;
+    padding: 2px; }
+    .navbar .navbar-toggle i {
+      font-size: 28px;
+      color: #333; }
+  .navbar .navbar-toggle:hover, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus {
+    background: #FFFFFF; }
+    .navbar .navbar-toggle:hover i, .navbar .navbar-toggle:active i, .navbar .navbar-toggle:focus i {
+      color: #999; }
 
 /* ------ Slideshow ------ */
 .slider {

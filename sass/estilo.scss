@@ -20,6 +20,24 @@ body {
 	border-bottom: none;
 	padding: 10px 0px;
 	box-shadow: -1px 1px 1px rgba(0,0,0,0.1);
+
+	.navbar-toggle {
+		border: 0;
+		padding: 2px;
+
+		i {
+			font-size: 28px;
+			color: #333;
+		}
+	}
+
+	.navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
+		background: #FFFFFF;
+
+		i {
+			color: #999;
+		}
+	}
 }
 
 
