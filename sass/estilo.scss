@@ -5,6 +5,9 @@
             Daniel Pederneras
 */
 
+@import 'bootstrap.scss';
+@import 'font-awesome.scss';
+
 body {
 	font-family: "Open Sans";
 	-webkit-font-smoothing: antialiased;
@@ -21,7 +24,7 @@ body {
 
 
 /* ------ Slideshow ------ */
-.jumbotron {
+.slider {
 	padding-top: 70px;
 	padding-bottom: 0px;
 
@@ -76,6 +79,10 @@ footer {
 
 		li {
 			margin: 4px 0px;
+			a {
+				color: #FFF;
+				text-decoration: underline;
+			}
 		}
 	}
 
