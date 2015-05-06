@@ -8317,6 +8317,14 @@ footer {
       color: #FFFFFF !important;
       border: 2px solid white; }
 
+.dropdown .dropdown-toggle, .dropdown .dropdown-toggle:hover, .dropdown .dropdown-toggle:focus, .dropdown .dropdown-toggle:active, .dropdown .dropdown-toggle:visited, .open .dropdown-toggle, .open .dropdown-toggle:hover, .open .dropdown-toggle:focus, .open .dropdown-toggle:active, .open .dropdown-toggle:visited {
+  background: #FFF !important;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  outline: 0; }
+.dropdown .dropdown-menu li a, .open .dropdown-menu li a {
+  padding: 8px 6px 8px 10px; }
+
 /* ------ Addon ------ */
 /* Tipografia */
 .normal {
@@ -8328,6 +8336,9 @@ footer {
 /* Cores */
 .white {
   color: #FFFFFF; }
+
+.darkGray {
+  color: #444; }
 
 /* Margens */
 .top-buffer-10 {

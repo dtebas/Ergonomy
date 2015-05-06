@@ -133,6 +133,25 @@ footer {
 	}
 }
 
+.dropdown, .open {
+	.dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-toggle:active, .dropdown-toggle:visited {
+		background: #FFF !important;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		outline: 0;
+	}
+
+	.dropdown-menu {
+		li {
+			a {
+				padding: 8px 6px 8px 10px;
+			}
+		}
+	}
+}
+
+
+
 
 /* ------ Addon ------ */
 /* Tipografia */
@@ -145,6 +164,9 @@ footer {
 /* Cores */
 .white {
 	color: #FFFFFF;
+}
+.darkGray {
+	color: #444;
 }
 
 /* Margens */
