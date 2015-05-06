@@ -8,14 +8,50 @@
     <a class="navbar-brand" href="index.html" style="color:#333;font-size:1.8em;font-weight:800">PEPECCA</a>
   </div>
   <div id="navbar" class="navbar-collapse collapse">
-    <form class="navbar-form navbar-right">
-      <div class="form-group">
-        <input type="text" placeholder="E-mail" class="form-control">
+
+
+    <!-- Se o usuario estiver deslogado -->
+    <div id="deslogado" style="display: none">
+      <!-- Caixa de login -->
+      <div class="navbar-form navbar-right">
+        <div class="form-group">
+          <input id="email" type="text" onKeyPress="enterLogin(event)" placeholder="E-mail" class="form-control">
+        </div>
+        <div class="form-group">
+          <input id="senha" type="password" onKeyPress="enterLogin(event)" placeholder="Senha" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-success">Log in</button>
       </div>
-      <div class="form-group">
-        <input type="password" placeholder="Senha" class="form-control">
+    </div>
+
+
+    <!-- Se o usuario estiver logado -->
+    <div id="logado" style="display: none">
+      <div class="navbar-form navbar-right">
+        <!-- Perfil -->
+
+        <div style="display: inline-block;" class="dropdown">
+          <button style="padding: 0;border:0;height:35px;line-height:35px;" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+            <h4 style="display:inline-block;float:left">Daniel P. &nbsp; &nbsp;</h4>
+            <div style="display:inline-block;width: 35px;height: 35px;background:url(https://scontent-gru.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/11136735_10206632298549337_8663567935681553183_n.jpg?oh=33e37d39de8b90de46ceb244bc64df6a&oe=55CCF80F) center center;background-size:cover;border-radius: 20px;border:2px solid rgba(255, 255, 255, 0.4)"></div>
+            <span class="caret" style="height:35px;line-height:35px"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a href="#">Meu perfil</a></li>
+            <li role="presentation"><a href="javascript:deslogar()">Sair</a></li>
+          </ul>
+        </div>
+        <!-- / Perfil -->
       </div>
-      <button type="submit" class="btn btn-success">Log in</button>
-    </form>
+    </div>
+
+    <script>
+      if (pegarLogin()) {
+        document.getElementById('logado').style.display = 'block';
+      }
+      else {
+        document.getElementById('deslogado').style.display = 'block';
+      }
+    </script>
   </div><!--/.navbar-collapse -->
 </div>
