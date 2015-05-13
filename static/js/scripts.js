@@ -14,11 +14,10 @@ function deslogar() {
 
 function login() {
 	if (document.getElementById('email').value == 'admin@admin.com' && document.getElementById('senha').value == '123') {
-		console.log("Login");
 		logar();
 	}
 	else {
-		console.error("Erro");
+		location.href=("login.html#erro");
 	}
 	return false;
 }

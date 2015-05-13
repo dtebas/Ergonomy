@@ -150,6 +150,17 @@ footer {
 	}
 }
 
+/* Login */
+.login-box {
+	max-width: 600px;margin:auto;text-align:left;
+}
+
+.error-box {
+	background: #FFD1D1;
+	border: 1px solid #AA0000;
+	padding: 1em 2em;
+}
+
 
 
 
@@ -181,4 +192,7 @@ footer {
 }
 .top-buffer-40 {
 	margin-top: 40px !important;
+}
+.top-buffer-70 {
+	margin-top: 70px !important;
 }

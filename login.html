@@ -14,7 +14,7 @@
 	<script src="static/js/bootstrap.js"></script>
 </head>
 <body>
-	<div class="_li">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-form navbar-right">
 				<button type="submit" class="btn btn-success">Cadastre-se</button>
@@ -22,58 +22,112 @@
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html" style="color:#333;font-size:1.8em;font-weight:800">PEPECCA</a>
 			</div>
-			<div class="row top-buffer-30">
-				<form class="col-md-10">
-					<div class="pam login_error_box uiBoxRed" role="alert" tabindex="0">
-						<div class="fsl fwb fcb">E-mail incorreto</div>
+		</div>
+	</nav>
+
+	<div class="container top-buffer-70">
+		<div class="row top-buffer-30">
+			<div class="col-md-12 text-center">
+				<div class="login-box">
+					<div class="error-box">
+						<div>E-mail incorreto</div>
 						<div>
 							<p>O e-mail digitado não pertence a nenhuma conta.</p>
-							<p>Você pode fazer login usando qualquer e-mail, nome de usuário 
-								ou número de celular associado à sua conta. Certifique-se de que 
+							<p>Você pode fazer login usando qualquer e-mail, nome de usuário
+								ou número de celular associado à sua conta. Certifique-se de que
 								a digitação está correta.</p>
-							</div>
-							<div>
-								<p>Digite sua senha novamente</p>
-								<p>A senha que você digitou está incorreta. Tente novamente (tenha
-									certeza de que a função Caps Lock está desligada)./<p>
-									<p>Esqueceu sua senha?
-										<a href="https://www.facebook.com/recover/initiate" target="">Solicite uma nova.</a>
-									</p>
-								</div>
-							</div>
-							<div id="loginform">
-								<div class="form_row clearfix">
-									<label for="email" class="login_form_label">E-mail:</label>
-									<input class="inputtext" id="email" name="email" tabindex="1" type="text">
-								</div>
-								<div class="form_row clearfix">
-									<label for="pass" class="login_form_label">Senha:</label>
-									<input name="pass" id="pass" class="inputpassword" tabindex="1" type="password">
-								</div>
-								<div class="persistent">
-									<div class="uiInputLabel clearfix uiInputLabelLegacy">
-										<input id="persist_box" value="1" name="persistent" class="uiInputLabelInput uiInputLabelCheckbox" type="checkbox">
-										<label for="persist_box" class="uiInputLabelLabel">Mantenha-me conectado</label>
-									</div>
-								</div>
-								<div class="container">
-									<div class="navbar-form navbar-left">
-										<button type="submit" class="btn btn-success">Entrar</button>
-									</div>
-									<div id="register_link">ou 
-										<strong>
-											<a href="https://www.facebook.com/r.php?next&amp;locale=es_ES&amp;display=page" rel="nofollow">Cadastre-se em PEPECCA</a>
-										</strong>
-									</div>
-								</div>
-								<p class="reset_password form_row">
-									<a href="https://www.facebook.com/recover/initiate" target="">Esqueceu sua senha?</a>
+						</div>
+						<div>
+							<p>Digite sua senha novamente</p>
+							<p>A senha que você digitou está incorreta. Tente novamente (tenha
+								certeza de que a função Caps Lock está desligada)./<p>
+								<p>Esqueceu sua senha?
+									<a href="#">Solicite uma nova.</a>
 								</p>
-							</form>
+						</div>
+					</div>
+					<div class="text-center top-buffer-40">
+						<div style="font-size:1.1em">
+
+							<div class="text-left" style="max-width:300px;margin:auto">
+								<label for="email">E-mail: &nbsp;&nbsp;</label>
+								<input onkeypress="caps(this)" class="form-control" id="email" name="email" tabindex="1" type="text">
+								<br />
+								<label for="pass">Senha: &nbsp;&nbsp;</label>
+								<input onkeypress="caps" name="pass" id="pass" class="form-control" tabindex="1" type="password">
+							</div>
+
+							<div class="top-buffer-20 clearfix">
+								<input id="persist_box" value="1" name="persistent" class="uiInputLabelInput uiInputLabelCheckbox" type="checkbox">
+								<label for="persist_box" style="font-weight: normal">Mantenha-me conectado</label>
+							</div>
+
+							<div class="text-center top-buffer-20">
+								<button type="submit" class="btn btn-success">Entrar</button>
+								<div id="register_link" style="display: inline-block">ou
+									<strong>
+										<a href="#">Cadastre-se</a>
+									</strong>
+								</div>
+							</div>
+
+							<p class="form_row top-buffer-20">
+								<a href="#">Esqueceu sua senha?</a>
+							</p>
 						</div>
 					</div>
 
+					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var CapsLock=(function(){
+		var _1=false;
+		var _2=[];
+		var _3=/Mac/.test(navigator.platform);
+		function _4(){
+		return _1;
+		};
+		function _5(_6){
+		_2.push(_6);
+		};
+		function _7(e){
+		if(!e){
+		e=window.event;
+		}
+		var _8=_1;
+		var _9=(e.charCode?e.charCode:e.keyCode);
+		if(_9>=97&&_9<=122){
+		_1=e.shiftKey;
+		}else{
+		if(_9>=65&&_9<=90&&!(e.shiftKey&&_3)){
+		_1=!e.shiftKey;
+		}
+		}
+		if(_1!=_8){
+		for(var _a=0;_a<_2.length;_a++){
+		_2[_a](_1);
+		}
+		}
+		};
+		if(window.addEventListener){
+		window.addEventListener("keypress",_7,false);
+		}else{
+		document.documentElement.attachEvent("onkeypress",_7);
+		}
+		return {isOn:_4,addListener:_5};
+		})();
+
+		/* Caps lock seu fdp? */
+		function caps(e){
+			if (CapsLock.isOn())
+		  		console.log("CAPS ta ligado, seu burro!");
+		 	else
+		  		console.log("CAPS desligado, você é muito gente boa.");
+		}
+	</script>
 
 
 				<!-- Rodapé -->
