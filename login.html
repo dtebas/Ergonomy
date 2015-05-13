@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ergonomia</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="static/css/estilo.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<script src="static/js/jquery.js"></script>
+	<script src="static/js/scripts.js"></script>
+	<script src="static/js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="_li">
+		<div class="container">
+			<div class="navbar-form navbar-right">
+				<button type="submit" class="btn btn-success">Cadastre-se</button>
+			</div>
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html" style="color:#333;font-size:1.8em;font-weight:800">PEPECCA</a>
+			</div>
+			<div class="row top-buffer-30">
+				<form class="col-md-10">
+					<div class="pam login_error_box uiBoxRed" role="alert" tabindex="0">
+						<div class="fsl fwb fcb">E-mail incorreto</div>
+						<div>
+							<p>O e-mail digitado não pertence a nenhuma conta.</p>
+							<p>Você pode fazer login usando qualquer e-mail, nome de usuário 
+								ou número de celular associado à sua conta. Certifique-se de que 
+								a digitação está correta.</p>
+							</div>
+							<div>
+								<p>Digite sua senha novamente</p>
+								<p>A senha que você digitou está incorreta. Tente novamente (tenha
+									certeza de que a função Caps Lock está desligada)./<p>
+									<p>Esqueceu sua senha?
+										<a href="https://www.facebook.com/recover/initiate" target="">Solicite uma nova.</a>
+									</p>
+								</div>
+							</div>
+							<div id="loginform">
+								<div class="form_row clearfix">
+									<label for="email" class="login_form_label">E-mail:</label>
+									<input class="inputtext" id="email" name="email" tabindex="1" type="text">
+								</div>
+								<div class="form_row clearfix">
+									<label for="pass" class="login_form_label">Senha:</label>
+									<input name="pass" id="pass" class="inputpassword" tabindex="1" type="password">
+								</div>
+								<div class="persistent">
+									<div class="uiInputLabel clearfix uiInputLabelLegacy">
+										<input id="persist_box" value="1" name="persistent" class="uiInputLabelInput uiInputLabelCheckbox" type="checkbox">
+										<label for="persist_box" class="uiInputLabelLabel">Mantenha-me conectado</label>
+									</div>
+								</div>
+								<div class="container">
+									<div class="navbar-form navbar-left">
+										<button type="submit" class="btn btn-success">Entrar</button>
+									</div>
+									<div id="register_link">ou 
+										<strong>
+											<a href="https://www.facebook.com/r.php?next&amp;locale=es_ES&amp;display=page" rel="nofollow">Cadastre-se em PEPECCA</a>
+										</strong>
+									</div>
+								</div>
+								<p class="reset_password form_row">
+									<a href="https://www.facebook.com/recover/initiate" target="">Esqueceu sua senha?</a>
+								</p>
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+
+				<!-- Rodapé -->
+				<footer class="top-buffer-40"></footer>
+
+				<script>
+					$('footer').load('includes/footer.html');
+				</script>
+			</body>
+			</html>
