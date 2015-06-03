@@ -12488,53 +12488,55 @@ footer .copyright .social-media:hover {
   color: #4298ED;
 }
 
+/* line 220, ../../sass/estilo.scss */
 .google-plus {
-  color: #CE2621; }
+  color: #CE2621;
+}
 
 /* Campo required */
-/* line 221, ../../sass/estilo.scss */
+/* line 224, ../../sass/estilo.scss */
 sup.req {
   color: #D00;
   font-size: 0.8em;
 }
 
 /* Margens */
-/* line 227, ../../sass/estilo.scss */
+/* line 230, ../../sass/estilo.scss */
 .top-buffer-10 {
   margin-top: 10px !important;
 }
 
-/* line 230, ../../sass/estilo.scss */
+/* line 233, ../../sass/estilo.scss */
 .top-buffer-20 {
   margin-top: 20px !important;
 }
 
-/* line 233, ../../sass/estilo.scss */
+/* line 236, ../../sass/estilo.scss */
 .top-buffer-30 {
   margin-top: 30px !important;
 }
 
-/* line 236, ../../sass/estilo.scss */
+/* line 239, ../../sass/estilo.scss */
 .top-buffer-40 {
   margin-top: 40px !important;
 }
 
-/* line 239, ../../sass/estilo.scss */
+/* line 242, ../../sass/estilo.scss */
 .top-buffer-50 {
   margin-top: 50px !important;
 }
 
-/* line 242, ../../sass/estilo.scss */
+/* line 245, ../../sass/estilo.scss */
 .top-buffer-60 {
   margin-top: 60px !important;
 }
 
-/* line 245, ../../sass/estilo.scss */
+/* line 248, ../../sass/estilo.scss */
 .top-buffer-70 {
   margin-top: 70px !important;
 }
 
-/* line 249, ../../sass/estilo.scss */
+/* line 252, ../../sass/estilo.scss */
 #formulariocadastro {
   border: 0px dotted grey;
   width: 800px;
@@ -12542,7 +12544,7 @@ sup.req {
   padding: 20px;
 }
 
-/* line 255, ../../sass/estilo.scss */
+/* line 258, ../../sass/estilo.scss */
 .button-right {
   padding-top: 30px;
   margin-right: 100px;
