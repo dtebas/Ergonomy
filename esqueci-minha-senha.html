@@ -14,13 +14,7 @@
 	<script src="static/js/bootstrap.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html" style="color:#333;font-size:1.8em;font-weight:800">PEPECCA</a>
-			</div>
-		</div>
-	</nav>
+	<nav class="navbar navbar-inverse navbar-fixed-top"></nav>
 
 	<div class="container top-buffer-70">
 		<div class="row top-buffer-30">
@@ -33,8 +27,12 @@
 							<div class="text-left" style="max-width:300px;margin:auto">
 								
 								<label for="pass">E-mail, telefone, nome de usuário ou nome completo: &nbsp;&nbsp;</label>
-								<i class="glyphicon glyphicon-envelope"></i> 
-								<input  onkeypress="caps" name="pass" id="pass" class="form-control" tabindex="1" type="password">
+								<div class="input-group">
+									<span class="input-group-addon" id="basic-addon2"><i class="fa fa-envelope"></i></span>
+									<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+								</div>
+								<!-- <i class="glyphicon glyphicon-envelope"></i> 
+								<input  onkeypress="caps" name="pass" id="pass" class="form-control" tabindex="1" type="password"> -->
 							</div>
 
 							<div class="top-buffer-20 clearfix">
@@ -106,6 +104,7 @@
 				<footer class="top-buffer-40"></footer>
 
 				<script>
+					$('nav').load('includes/navbar_login.html');
 					$('footer').load('includes/footer.html');
 				</script>
 			</body>

@@ -8296,7 +8296,7 @@ footer {
       margin: 4px 0px; }
       footer .footer-menu li a {
         color: #FFF;
-        text-decoration: underline; }
+        text-decoration: none; }
   footer .copyright {
     padding: 1.4em 0;
     background: #1A1A1A; }
