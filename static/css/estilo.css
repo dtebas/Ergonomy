@@ -12266,46 +12266,51 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 16, ../../sass/estilo.scss */
+.container {
+  max-width: 1000px;
+}
+
 /* ------ Navbar ------ */
-/* line 18, ../../sass/estilo.scss */
+/* line 22, ../../sass/estilo.scss */
 .navbar {
   background: #FFFFFF;
   border-bottom: none;
   padding: 10px 0px;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
 }
-/* line 24, ../../sass/estilo.scss */
+/* line 28, ../../sass/estilo.scss */
 .navbar .navbar-toggle {
   border: 0;
   padding: 2px;
 }
-/* line 28, ../../sass/estilo.scss */
+/* line 32, ../../sass/estilo.scss */
 .navbar .navbar-toggle i {
   font-size: 28px;
   color: #333;
 }
-/* line 34, ../../sass/estilo.scss */
+/* line 38, ../../sass/estilo.scss */
 .navbar .navbar-toggle:hover, .navbar .navbar-toggle:active, .navbar .navbar-toggle:focus {
   background: #FFFFFF;
 }
-/* line 37, ../../sass/estilo.scss */
+/* line 41, ../../sass/estilo.scss */
 .navbar .navbar-toggle:hover i, .navbar .navbar-toggle:active i, .navbar .navbar-toggle:focus i {
   color: #999;
 }
 
 /* ------ Slideshow ------ */
-/* line 45, ../../sass/estilo.scss */
+/* line 49, ../../sass/estilo.scss */
 .slider {
   padding-top: 70px;
   padding-bottom: 0px;
 }
-/* line 49, ../../sass/estilo.scss */
+/* line 53, ../../sass/estilo.scss */
 .slider .slide {
   width: 100%;
   height: 300px;
   max-height: 300px;
 }
-/* line 54, ../../sass/estilo.scss */
+/* line 58, ../../sass/estilo.scss */
 .slider .slide h1 {
   display: inline-block;
   padding: 5px 15px;
@@ -12315,7 +12320,7 @@ body {
   background: rgba(0, 0, 0, 0.3);
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
-/* line 65, ../../sass/estilo.scss */
+/* line 69, ../../sass/estilo.scss */
 .slider .slide h2 {
   display: inline-block;
   padding: 15px 15px;
@@ -12327,42 +12332,42 @@ body {
 }
 
 /* ------ Rodapé ------ */
-/* line 79, ../../sass/estilo.scss */
+/* line 83, ../../sass/estilo.scss */
 footer {
   padding-top: 30px;
   font-weight: 400;
   background: #333333;
   color: #DDDDDD;
 }
-/* line 85, ../../sass/estilo.scss */
+/* line 89, ../../sass/estilo.scss */
 footer .footer-menu {
   font-size: 1.1em;
   list-style: none;
   padding: 0;
   margin: 20px 0 0 0;
 }
-/* line 91, ../../sass/estilo.scss */
+/* line 95, ../../sass/estilo.scss */
 footer .footer-menu .title {
   color: #FFF;
   font-size: 1.1em;
   font-weight: bold;
   margin: 0px 0px 20px 0px;
 }
-/* line 98, ../../sass/estilo.scss */
+/* line 102, ../../sass/estilo.scss */
 footer .footer-menu li {
   margin: 4px 0px;
 }
-/* line 100, ../../sass/estilo.scss */
+/* line 104, ../../sass/estilo.scss */
 footer .footer-menu li a {
   color: #FFF;
-  text-decoration: underline;
+  text-decoration: none;
 }
-/* line 107, ../../sass/estilo.scss */
+/* line 111, ../../sass/estilo.scss */
 footer .copyright {
   padding: 1.4em 0;
   background: #1A1A1A;
 }
-/* line 111, ../../sass/estilo.scss */
+/* line 115, ../../sass/estilo.scss */
 footer .copyright .social-media {
   display: inline-block;
   width: 32px;
@@ -12377,89 +12382,156 @@ footer .copyright .social-media {
   transition: 0.3s;
   color: #999;
 }
-/* line 129, ../../sass/estilo.scss */
+/* line 133, ../../sass/estilo.scss */
 footer .copyright .social-media:hover {
   color: #FFFFFF !important;
   border: 2px solid white;
 }
 
-/* line 137, ../../sass/estilo.scss */
+/* line 141, ../../sass/estilo.scss */
 .dropdown .dropdown-toggle, .dropdown .dropdown-toggle:hover, .dropdown .dropdown-toggle:focus, .dropdown .dropdown-toggle:active, .dropdown .dropdown-toggle:visited, .open .dropdown-toggle, .open .dropdown-toggle:hover, .open .dropdown-toggle:focus, .open .dropdown-toggle:active, .open .dropdown-toggle:visited {
   background: #FFF !important;
   box-shadow: none;
   -webkit-box-shadow: none;
   outline: 0;
 }
-/* line 146, ../../sass/estilo.scss */
+/* line 150, ../../sass/estilo.scss */
 .dropdown .dropdown-menu li a, .open .dropdown-menu li a {
   padding: 8px 6px 8px 10px;
 }
 
 /* Login */
-/* line 154, ../../sass/estilo.scss */
+/* line 158, ../../sass/estilo.scss */
 .login-box {
   max-width: 600px;
   margin: auto;
   text-align: left;
 }
 
-/* line 158, ../../sass/estilo.scss */
+/* line 162, ../../sass/estilo.scss */
 .error-box {
   background: #FFD1D1;
   border: 1px solid #AA0000;
   padding: 1em 2em;
 }
 
+/* Sobre */
+/* line 170, ../../sass/estilo.scss */
+.sobre-foto {
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
+  border: 4px solid rgba(255, 255, 255, 0.44);
+  margin-bottom: 40px;
+}
+
 /* ------ Addon ------ */
 /* Tipografia */
-/* line 169, ../../sass/estilo.scss */
+/* line 182, ../../sass/estilo.scss */
+.size-small {
+  font-size: 0.8em;
+}
+
+/* line 185, ../../sass/estilo.scss */
+.size-normal {
+  font-size: 1.2em;
+}
+
+/* line 188, ../../sass/estilo.scss */
+.size-medium {
+  font-size: 1.4em;
+}
+
+/* line 191, ../../sass/estilo.scss */
+.size-large {
+  font-size: 1.8em;
+}
+
+/* line 194, ../../sass/estilo.scss */
+.size-x-large {
+  font-size: 2.2em;
+}
+
+/* line 198, ../../sass/estilo.scss */
 .normal {
   font-weight: normal;
 }
 
-/* line 172, ../../sass/estilo.scss */
+/* line 201, ../../sass/estilo.scss */
 .bold {
   font-weight: 600;
 }
 
 /* Cores */
-/* line 176, ../../sass/estilo.scss */
+/* line 205, ../../sass/estilo.scss */
 .white {
   color: #FFFFFF;
 }
 
-/* line 179, ../../sass/estilo.scss */
+/* line 208, ../../sass/estilo.scss */
 .darkGray {
   color: #444;
 }
 
+/* line 211, ../../sass/estilo.scss */
+.facebook {
+  color: #4362BE;
+}
+
+/* line 214, ../../sass/estilo.scss */
+.linkedin {
+  color: #2674B3;
+}
+
+/* line 217, ../../sass/estilo.scss */
+.twitter {
+  color: #4298ED;
+}
+
+/* Campo required */
+/* line 221, ../../sass/estilo.scss */
+sup.req {
+  color: #D00;
+  font-size: 0.8em;
+}
+
 /* Margens */
-/* line 184, ../../sass/estilo.scss */
+/* line 227, ../../sass/estilo.scss */
 .top-buffer-10 {
   margin-top: 10px !important;
 }
 
-/* line 187, ../../sass/estilo.scss */
+/* line 230, ../../sass/estilo.scss */
 .top-buffer-20 {
   margin-top: 20px !important;
 }
 
-/* line 190, ../../sass/estilo.scss */
+/* line 233, ../../sass/estilo.scss */
 .top-buffer-30 {
   margin-top: 30px !important;
 }
 
-/* line 193, ../../sass/estilo.scss */
+/* line 236, ../../sass/estilo.scss */
 .top-buffer-40 {
   margin-top: 40px !important;
 }
 
-/* line 196, ../../sass/estilo.scss */
+/* line 239, ../../sass/estilo.scss */
+.top-buffer-50 {
+  margin-top: 50px !important;
+}
+
+/* line 242, ../../sass/estilo.scss */
+.top-buffer-60 {
+  margin-top: 60px !important;
+}
+
+/* line 245, ../../sass/estilo.scss */
 .top-buffer-70 {
   margin-top: 70px !important;
 }
 
-/* line 200, ../../sass/estilo.scss */
+/* line 249, ../../sass/estilo.scss */
 #formulariocadastro {
   border: 0px dotted grey;
   width: 800px;
@@ -12467,7 +12539,7 @@ footer .copyright .social-media:hover {
   padding: 20px;
 }
 
-/* line 206, ../../sass/estilo.scss */
+/* line 255, ../../sass/estilo.scss */
 .button-right {
   padding-top: 30px;
   margin-right: 100px;
