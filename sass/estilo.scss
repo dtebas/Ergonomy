@@ -13,6 +13,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+.container {
+	max-width: 1000px;
+}
+
 
 /* ------ Navbar ------ */
 .navbar {
@@ -162,10 +166,35 @@ footer {
 }
 
 
+/* Sobre */
+.sobre-foto {
+	width: 180px;
+	height: 180px;
+	border-radius: 100px;
+	border: 4px solid rgba(255, 255, 255, 0.44);
+	margin-bottom: 40px;
+}
+
 
 
 /* ------ Addon ------ */
 /* Tipografia */
+.size-small {
+	font-size: 0.8em;
+}
+.size-normal {
+	font-size: 1.2em;
+}
+.size-medium {
+	font-size: 1.4em;
+}
+.size-large {
+	font-size: 1.8em;
+}
+.size-x-large {
+	font-size: 2.2em;
+}
+
 .normal {
 	font-weight: normal;
 }
@@ -178,6 +207,20 @@ footer {
 }
 .darkGray {
 	color: #444;
+}
+.facebook {
+	color: #4362BE;
+}
+.linkedin {
+	color: #2674B3;
+}
+.twitter {
+	color: #4298ED;
+}
+/* Campo required */
+sup.req {
+	color: #D00;
+	font-size: 0.8em;
 }
 
 /* Margens */
@@ -192,6 +235,12 @@ footer {
 }
 .top-buffer-40 {
 	margin-top: 40px !important;
+}
+.top-buffer-50 {
+	margin-top: 50px !important;
+}
+.top-buffer-60 {
+	margin-top: 60px !important;
 }
 .top-buffer-70 {
 	margin-top: 70px !important;
