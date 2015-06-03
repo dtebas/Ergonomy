@@ -8244,7 +8244,7 @@ body {
   padding: 10px 0px;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1); }
   .navbar .navbar-toggle {
-    border: 0;
+    border: none !important;
     padding: 2px; }
     .navbar .navbar-toggle i {
       font-size: 28px;
@@ -8341,11 +8341,12 @@ footer {
 
 /* Sobre */
 .sobre-foto {
+  display: inline-block;
   width: 180px;
   height: 180px;
   border-radius: 100px;
   border: 4px solid rgba(255, 255, 255, 0.44);
-  margin-bottom: 40px; }
+  margin-top: 40px; }
 
 /* ------ Addon ------ */
 /* Tipografia */
@@ -8416,6 +8417,28 @@ sup.req {
 .top-buffer-70 {
   margin-top: 70px !important; }
 
+/* Cadastro */
+#formulariocadastro {
+  border: 0px dotted #CCC;
+  width: 800px;
+  margin: auto;
+  padding: 20px; }
+
+.button-right {
+  padding-top: 30px;
+  margin-right: 100px; }
+
 /* Responsividade */
+@media (max-width: 992px) {
+  .text-center-medium {
+    text-align: center; } }
+@media (max-width: 769px) {
+  /* Navbar */
+  .navbar {
+    /*padding-bottom: 0px;*/ }
+
+  .navbar-form, .navbar-collapse {
+    background: #333;
+    border: 0; } }
 
 /*# sourceMappingURL=estilo.css.map */
