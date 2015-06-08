@@ -8387,91 +8387,46 @@ footer {
 .twitter {
   color: #4298ED; }
 
-/* line 220, ../../sass/estilo.scss */
 .google-plus {
-  color: #CE2621;
-}
+  color: #CE2621; }
 
 /* Campo required */
-<<<<<<< HEAD
-/* line 224, ../../sass/estilo.scss */
-=======
->>>>>>> 8ca31badca9e38b25379637da22b74683a5db158
 sup.req {
   color: #D00;
   font-size: 0.8em; }
 
 /* Margens */
-<<<<<<< HEAD
-/* line 230, ../../sass/estilo.scss */
-=======
->>>>>>> 8ca31badca9e38b25379637da22b74683a5db158
 .top-buffer-10 {
   margin-top: 10px !important; }
 
-<<<<<<< HEAD
-/* line 233, ../../sass/estilo.scss */
-=======
->>>>>>> 8ca31badca9e38b25379637da22b74683a5db158
 .top-buffer-20 {
   margin-top: 20px !important; }
 
-<<<<<<< HEAD
-/* line 236, ../../sass/estilo.scss */
-=======
->>>>>>> 8ca31badca9e38b25379637da22b74683a5db158
 .top-buffer-30 {
   margin-top: 30px !important; }
 
-<<<<<<< HEAD
-/* line 239, ../../sass/estilo.scss */
-=======
->>>>>>> 8ca31badca9e38b25379637da22b74683a5db158
 .top-buffer-40 {
   margin-top: 40px !important; }
 
-<<<<<<< HEAD
-/* line 242, ../../sass/estilo.scss */
-=======
->>>>>>> 8ca31badca9e38b25379637da22b74683a5db158
 .top-buffer-50 {
   margin-top: 50px !important; }
 
-<<<<<<< HEAD
-/* line 245, ../../sass/estilo.scss */
-=======
->>>>>>> 8ca31badca9e38b25379637da22b74683a5db158
 .top-buffer-60 {
   margin-top: 60px !important; }
 
-<<<<<<< HEAD
-/* line 248, ../../sass/estilo.scss */
-=======
->>>>>>> 8ca31badca9e38b25379637da22b74683a5db158
 .top-buffer-70 {
   margin-top: 70px !important; }
 
-<<<<<<< HEAD
 .top-buffer-80 {
   margin-top: 80px !important; }
 
-=======
-<<<<<<< HEAD
-/* line 252, ../../sass/estilo.scss */
-=======
->>>>>>> 8a18ca5f47e503609a10fabe8b77081bb0441e07
 /* Cadastro */
->>>>>>> 8ca31badca9e38b25379637da22b74683a5db158
 #formulariocadastro {
   border: 0px dotted #CCC;
   width: 800px;
   margin: auto;
   padding: 20px; }
 
-<<<<<<< HEAD
-/* line 258, ../../sass/estilo.scss */
-=======
->>>>>>> 8ca31badca9e38b25379637da22b74683a5db158
 .button-right {
   padding-top: 30px;
   margin-right: 100px; }
