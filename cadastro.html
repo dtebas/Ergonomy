@@ -28,32 +28,43 @@
   </nav>
     <!-- /Importado -->
     <div class="container top-buffer-70">
-    <div class="row top-buffer-30">
-      <div class="col-md-12 text-center">
-      <h2>Cadastro de novo usuario</h2>
-      <a href="index.html">Home</a>
-      <h7>
-        <p>Para proceder seu cadastro preencha o formulário abaixo tomando o cuidado de completar os campos obrigatórios (com asterisco).</p>
-      </h7>
-      <div id="formulariocadastro">
-        <form>
-          <div class="formlyeenda"> Nome:</div>
-          <input type="text" name="nome" placeholder="nome" class="form-control">
-          <div class="formlyeenda"> Sobrenome:</div>
-          <input type="text" name="sobrenome" placeholder="sobrenome" class="form-control">
-          <div class="formlyeenda">E-mail</div>
-          <input type="text" name="email" placeholder="email" class="form-control">
-          <div class="formlyeenda">Nova senha</div>
-          <input type="password" name="senha" placeholder="senha" class="form-control">
-          <div class="formlyeenda">Insira novamente sua senha</div>
-          <input type="password" name="senha2" placeholder="insira novamente sua senha" class="form-control">
-          <div class="button-right">
-              <button type="button" class="btn btn-success" onClick="login()">Cadastrar-se</button>
+      <div class="row top-buffer-30">
+        <div class="col-md-12">
+          <h2>Cadastro de novo usuario</h2>
+          <a href="index.html">Home</a>
+          <h7>
+            <p>Para proceder seu cadastro preencha o formulário abaixo tomando o cuidado de completar os campos obrigatórios (com asterisco).</p>
+          </h7>
+          <div class="col-md-6">
+            <form>
+              <div> 
+                <label for="nome">Nome:<sup class="req">*</sup></label>
+                <input type="text" required class="form-control" name="nome" id="nome" />
+              </div>
+              <div class="top-buffer-20">
+                <label for="sobrenome">Sobrenome:<sup class="req">*</sup></label> 
+                <input type="text" required class="form-control" name="sobrenome" id="sobrenome" >
+              </div>
+              
+              <div class="top-buffer-20">
+                <label for="email">E-mail<sup class="req">*</sup></label>
+                <input type="text" required class="form-control" name="email" id="email" >
+              </div>
+              
+              <div class="top-buffer-20">
+                <label for="senha">Nova senha<sup class="req">*</sup></label>
+                <input type="password" requeired class="form-control" name="senha" id="senha" >
+              </div>
+              
+              <div class="top-buffer-20">
+                <label for="senhaconf">Insira novamente sua senha<sup class="req">*</sup></label>
+                <input type="password" requeired  class="form-control" name="senhaconf" id="insira novamente sua senha" >
+              </div>
+                <button type="button" class="btn btn-success top-buffer-40" onClick="login()">Cadastrar-se</button>
+            </form>
           </div>
-        </form>
-    </div>
-    </div>
-    </div> <!-- /container -->
+        </div>
+      </div> <!-- /container -->
     </div>
 
 
