@@ -27,3 +27,17 @@ function enterLogin(e) {
 		login();
 	}
 }
+function limpar()
+{
+	var nome = document.getElementById('nome');
+	nome.value = "";
+	var sobrenome = document.getElementById('sobrenome');
+	sobrenome.value = "";
+	var email = document.getElementById('email');
+	email.value = "";
+	var pass = document.getElementById('senha');
+	pass.value = "";
+	var pass2 = document.getElementById('senhaconf');
+	pass2.value = ""; 
+}
+
