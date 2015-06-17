@@ -19,38 +19,49 @@
 
 	<div class="container top-buffer-70">
 		<div class="row top-buffer-30">
-			<div class="col-md-12 text-center">
+			<div class="col-md-12 text-left">
+				<ol class="breadcrumb">
+		            <li><a href="index.html">Home</a></li>
+		            <li class="active">Login</li>
+		        </ol>
+
+		        <h2>Login</h2>
+
 				<div class="login-box">
 					<div class="error-box" id="error-box" style="display:none">
 						<div id="error-email" style="display:none">
+							<strong>E-mail ou senha inválidos.</strong>
+							<br />
+							Tente novamente.
+							<br />
+							Esqueceu sua senha? <a href="esqueci-minha-senha.html">Solicite uma nova</a>
+						</div>
+						<!-- <div id="error-email" style="display:none">
 							<div>E-mail incorreto</div>
 							<div>
 								<p>O e-mail digitado não pertence a nenhuma conta.</p>
-								<p>Você pode fazer login usando qualquer e-mail, nome de usuário
-									ou número de celular associado à sua conta. Certifique-se de que
-									a digitação está correta.</p>
+								<p>Você pode fazer login usando qualquer e-mail, nome de usuário ou número de celular associado à sua conta. Certifique-se de que a digitação está correta.</p>
 								</div>
 							</div>
 							<div id="error-pass" style="display:none">
 								<div>
 									<p>Digite sua senha novamente</p>
-									<p>A senha que você digitou está incorreta. Tente novamente (tenha
-										certeza de que a função Caps Lock está desligada)./<p>
+									<p>A senha que você digitou está incorreta. Tente novamente (tenha certeza de que a função Caps Lock está desligada)./<p>
 										<p>Esqueceu sua senha?
 											<a href="#">Solicite uma nova.</a>
 										</p>
 									</div>
-								</div>
-							</div>
+								</div> -->
+					</div>
 					<div class="text-center top-buffer-40">
 						<div style="font-size:1.1em">
 
 							<div class="text-left" style="max-width:300px;margin:auto">
 								<label for="email">E-mail: &nbsp;&nbsp;</label>
-								<input onkeypress="caps(this)" class="form-control" id="emailLogin" name="email" tabindex="1" type="text">
+								<input onKeyPress="enterLogin(event)" class="form-control" id="email" name="email" type="email">
 								<br />
-								<label for="pass">Senha: &nbsp;&nbsp;</label>
-								<input onkeypress="caps" class="form-control" id="passLogin" name="pass" tabindex="1" type="password">
+								<label for="senha">Senha: &nbsp;&nbsp;</label>
+								<input onKeyPress="enterLogin(event)" class="form-control" id="senha" name="senha" type="password">
 							</div>
 
 							<div class="top-buffer-20 clearfix">
@@ -62,76 +73,37 @@
 								<button type="submit" class="btn btn-success" onclick="enterPaginaLogin()">Entrar</button>
 								<div id="register_link" style="display: inline-block">ou
 									<strong>
-										<a href="#">Cadastre-se</a>
+										<a href="cadastro.html">Cadastre-se</a>
 									</strong>
 								</div>
 							</div>
 
 							<p class="form_row top-buffer-20">
-								<a href="#">Esqueceu sua senha?</a>
+								<a href="esqueci-minha-senha.html">Esqueceu sua senha?</a>
 							</p>
 						</div>
 					</div>
 
-					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script>
-		var CapsLock=(function(){
-		var _1=false;
-		var _2=[];
-		var _3=/Mac/.test(navigator.platform);
-		function _4(){
-		return _1;
-		};
-		function _5(_6){
-		_2.push(_6);
-		};
-		function _7(e){
-		if(!e){
-		e=window.event;
-		}
-		var _8=_1;
-		var _9=(e.charCode?e.charCode:e.keyCode);
-		if(_9>=97&&_9<=122){
-		_1=e.shiftKey;
-		}else{
-		if(_9>=65&&_9<=90&&!(e.shiftKey&&_3)){
-		_1=!e.shiftKey;
-		}
-		}
-		if(_1!=_8){
-		for(var _a=0;_a<_2.length;_a++){
-		_2[_a](_1);
-		}
-		}
-		};
-		if(window.addEventListener){
-		window.addEventListener("keypress",_7,false);
-		}else{
-		document.documentElement.attachEvent("onkeypress",_7);
-		}
-		return {isOn:_4,addListener:_5};
-		})();
+</div>
 
-		/* Caps lock seu fdp? */
-		function caps(e){
-			if (CapsLock.isOn())
-		  		console.log("CAPS ta ligado, seu burro!");
-		 	else
-		  		console.log("CAPS desligado, você é muito gente boa.");
-		}
-	</script>
+		<!-- Rodapé -->
+		<footer class="top-buffer-40"></footer>
 
+		<script>
+			$('nav').load('includes/navbar_login.html');
+			$('footer').load('includes/footer.html');
 
-				<!-- Rodapé -->
-				<footer class="top-buffer-40"></footer>
+			if (pegarLogin()) {
+				location.href = 'index.html';
+			}
 
-				<script>
-					$('nav').load('includes/navbar_login.html');
-					$('footer').load('includes/footer.html');
-				</script>
-			</body>
-			</html>
+			if (document.location.hash.indexOf("erro") != -1) {
+				enterPaginaLogin();
+			}
+		</script>
+	</body>
+	</html>
