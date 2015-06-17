@@ -8420,6 +8420,29 @@ sup.req {
 .top-buffer-80 {
   margin-top: 80px !important; }
 
+.bottom-buffer-10 {
+  margin-bottom: 10px !important; }
+
+.bottom-buffer-20 {
+  margin-bottom: 20px !important; }
+
+.bottom-buffer-30 {
+  margin-bottom: 30px !important; }
+
+.bottom-buffer-40 {
+  margin-bottom: 40px !important; }
+
+.bottom-buffer-50 {
+  margin-bottom: 50px !important; }
+
+.bottom-buffer-60 {
+  margin-bottom: 60px !important; }
+
+.bottom-buffer-70 {
+  margin-bottom: 70px !important; }
+
+.bottom-buffer-80 {
+  margin-bottom: 80px !important; }
 /* Cadastro */
 #formulariocadastro {
   border: 0px dotted #CCC;
