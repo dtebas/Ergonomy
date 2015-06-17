@@ -19,27 +19,84 @@
 
     <!-- Importado -->
     <nav class="navbar navbar-inverse navbar-fixed-top"></nav>
-    <div class="slider"></div>
+    <div class="slider">
+
+      <!-- <div class="container"> -->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="height: 190px">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox" style="height: 190px">
+            <div class="item active">
+              <div class="slide" style="background:url(static/imgs/bg1.jpg);background-size:cover;background-position: center center">
+                <div class="container">
+                    <h1 class="top-buffer-60">MBA em Stanford</h1><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+    </div>
     <!-- /Importado -->
 
     <div class="container">
       <!-- Example row of columns -->
       <div class="row top-buffer-30">
+        <div class="col-md-6">
+          <h2>Sobre o curso MBA em Stanford</h2>
+          <p class="size-normal top-buffer-20">
+            Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet.
+          </p>
+         
+          
+          <p class="top-buffer-20"><h3>Inscrições abertas turma 2016</h3></p>
+
+          <p class="size-normal top-buffer-40">
+            <strong>Início previsto: &nbsp;&nbsp; Janeiro</strong><br />
+            <strong>Carga horária: &nbsp;&nbsp;&nbsp; 600h</strong><br />
+            <strong>Investimento: &nbsp;&nbsp;&nbsp; R$ 2.222,00</strong><br />
+          </p>
+          
+
+          <p class="top-buffer-20">
+            <button class="top-buffer-30 btn btn-primary size-normal"><strong>Clique para fazer sua inscrição</strong></button>
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <iframe class="top-buffer-70" width="100%" height="315" src="https://www.youtube.com/embed/siKaNqAtFP8" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+
+      <!-- Outros cursos -->
+      <div class="row top-buffer-80">
+        <div class="col-md-12">
+          <h3>Cursos relacionados</h3>
+        </div>
+
         <div class="col-md-4">
-          <h2>Curso 1</h2>
+          <h3>Curso 1</h3>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#" role="button">Ver detalhes &raquo;</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Curso 2</h2>
+          <h3>Curso 2</h3>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#" role="button">Ver detalhes &raquo;</a></p>
        </div>
         <div class="col-md-4">
-          <h2>Curso 3</h2>
+          <h3>Curso 3</h3>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">Ver detalhes &raquo;</a></p>
         </div>
+
       </div>
 
 
@@ -52,7 +109,6 @@
     <script>
       $('footer').load('includes/footer.html');
       $('nav').load('includes/navbar.html');
-      $('.slider').load('includes/slider.html');
     </script>
 
   </body>
