@@ -18,31 +18,29 @@
 
 	<div class="container top-buffer-70">
 		<div class="row top-buffer-30">
-			<div class="col-md-12 text-center">
-				<div class="login-box">
-					</div>
+			<div class="col-md-12 text-left">
+				<ol class="breadcrumb">
+		            <li><a href="index.html">Home</a></li>
+		            <li><a href="login.html">Login</a></li>
+		            <li class="active">Esqueci minha senha</li>
+		          </ol>
+
+		          <h2>Esqueci minha senha</h2>
 					<div class="text-center top-buffer-40">
 						<div style="font-size:1.1em">
 
 							<div class="text-left" style="max-width:300px;margin:auto">
 								
-								<label for="pass">E-mail, telefone, nome de usuário ou nome completo: &nbsp;&nbsp;</label>
+								<label for="pass">Digite abaixo seu e-mail para recuperar sua senha: &nbsp;&nbsp;</label>
 								<div class="input-group">
 									<span class="input-group-addon" id="basic-addon2"><i class="fa fa-envelope"></i></span>
-									<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+									<input type="text" id="email" class="form-control" placeholder="E-mail">
 								</div>
-								<!-- <i class="glyphicon glyphicon-envelope"></i> 
-								<input  onkeypress="caps" name="pass" id="pass" class="form-control" tabindex="1" type="password"> -->
 							</div>
 
-							<div class="top-buffer-20 clearfix">
-								<input id="persist_box" value="1" name="persistent" class="uiInputLabelInput uiInputLabelCheckbox" type="checkbox">
-								<label for="persist_box" style="font-weight: normal">Mantenha-me conectado</label>
-							</div>
 
 							<div class="text-center top-buffer-20">
-								<button type="submit" class="btn btn-success">Entrar</button>
-								<a onclick="voltar()" class="btn btn-default">Cancelar</a>
+								<button type="button" onclick="validar();" class="btn btn-success">Relembrar minha senha</button>
 							</div>
 						</div>
 					</div>
@@ -53,59 +51,24 @@
 		</div>
 	</div>
 	<script>
-		var CapsLock=(function(){
-		var _1=false;
-		var _2=[];
-		var _3=/Mac/.test(navigator.platform);
-		function _4(){
-		return _1;
-		};
-		function _5(_6){
-		_2.push(_6);
-		};
-		function _7(e){
-		if(!e){
-		e=window.event;
-		}
-		var _8=_1;
-		var _9=(e.charCode?e.charCode:e.keyCode);
-		if(_9>=97&&_9<=122){
-		_1=e.shiftKey;
-		}else{
-		if(_9>=65&&_9<=90&&!(e.shiftKey&&_3)){
-		_1=!e.shiftKey;
-		}
-		}
-		if(_1!=_8){
-		for(var _a=0;_a<_2.length;_a++){
-		_2[_a](_1);
-		}
-		}
-		};
-		if(window.addEventListener){
-		window.addEventListener("keypress",_7,false);
-		}else{
-		document.documentElement.attachEvent("onkeypress",_7);
-		}
-		return {isOn:_4,addListener:_5};
-		})();
-
-		/* Caps lock seu fdp? */
-		function caps(e){
-			if (CapsLock.isOn())
-		  		console.log("CAPS ta ligado, seu burro!");
-		 	else
-		  		console.log("CAPS desligado, você é muito gente boa.");
+		function validar() {
+			if (!document.getElementById('email').value) {
+				alert("Por favor, insira um e-mail.");
+			}
+			else if (!/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i.test(document.getElementById('email').value)) {
+				alert("Por favor, insira um e-mail válido.");
+			}
+			else {
+				alert("Um e-mail foi enviado para que você redefina sua senha.");
+			}
 		}
 	</script>
+	<!-- Rodapé -->
+	<footer class="top-buffer-40"></footer>
 
-
-				<!-- Rodapé -->
-				<footer class="top-buffer-40"></footer>
-
-				<script>
-					$('nav').load('includes/navbar_login.html');
-					$('footer').load('includes/footer.html');
-				</script>
-			</body>
-			</html>
+	<script>
+		$('nav').load('includes/navbar_login.html');
+		$('footer').load('includes/footer.html');
+	</script>
+</body>
+</html>

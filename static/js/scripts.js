@@ -13,7 +13,8 @@ function deslogar() {
 }
 
 function login() {
-	if (document.getElementById('email').value == 'admin@admin.com' && document.getElementById('senha').value == '123') {
+	// Checa por um email valido e senha > 1 caracter
+	if (/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i.test(document.getElementById('email').value) && document.getElementById('senha').value) {
 		logar();
 	}
 	else {
@@ -28,13 +29,14 @@ function enterLogin(e) {
 	}
 }
 
-function enterPaginaLogin () {
-	var usuario = document.getElementById('emailLogin');
-	var senha = document.getElementById('passLogin');
-	if(usuario.value == "")
+function enterPaginaLogin() {
+	var usuario = document.getElementById('email');
+	var senha = document.getElementById('senha');
+	
+	if (!usuario.value || !senha.value) {
 		mostrar('error-box');
 		mostrar('error-email');
-
+	}
 }
 
 function limpar(){
