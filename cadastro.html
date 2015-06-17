@@ -30,9 +30,14 @@
     <div class="container top-buffer-70">
       <div class="row top-buffer-30">
         <div class="col-md-12">
+          
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Cadastro</li>
+          </ol>
+
           <h2>Cadastro de novo usuario</h2>
-          <a href="index.html">Home</a>
-          >Cadastro
+          
           <div id="container_cadastro">
           <h7>
             <p>Para proceder seu cadastro preencha o formulário abaixo tomando o cuidado de completar os campos obrigatórios (com asterisco).</p>
@@ -62,8 +67,9 @@
                 <label for="senhaconf">Insira novamente sua senha<sup class="req">*</sup></label>
                 <input type="password" requeired  class="form-control" name="senhaconf" id="senhaconf" >
               </div>
-              <div class="top-buffer-20">
-                <button type="button" class="btn btn-success top-buffer-40" onClick="mensagemErroCadastro()">Enviar</button>
+              <div class="top-buffer-40">
+                <button type="button" class="btn btn-success" onClick="mensagemErroCadastro()">Enviar</button>
+                &nbsp;
                 <a onclick="limpar()" class="btn btn-default">Limpar</a>
               </div>
             </form>
