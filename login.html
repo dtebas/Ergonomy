@@ -46,30 +46,11 @@
 							<div id="error-pass" style="display:none">
 								<div>
 									<p>Digite sua senha novamente</p>
-<<<<<<< HEAD
-									<p>A senha que você digitou está incorreta. Tente novamente (tenha
-										certeza de que a função Caps Lock está desligada).</p>
-=======
 									<p>A senha que você digitou está incorreta. Tente novamente (tenha certeza de que a função Caps Lock está desligada)./<p>
->>>>>>> 3f7e7d1d68d30c620624053db510ae4bc0a96373
 										<p>Esqueceu sua senha?
 											<a href="#">Solicite uma nova.</a>
 										</p>
 									</div>
-<<<<<<< HEAD
-								</div>
-							</div>
-							<div class="text-center top-buffer-40">
-								<div style="font-size:1.1em">
-
-									<div class="text-left" style="max-width:300px;margin:auto">
-										<label for="email">E-mail: &nbsp;&nbsp;</label>
-										<input onkeypress="caps(this)" class="form-control" id="emailLogin" name="email" tabindex="1" type="text">
-										<br />
-										<label for="pass">Senha: &nbsp;&nbsp;</label>
-										<input onkeypress="caps" class="form-control" id="passLogin" name="pass" tabindex="1" type="password">
-									</div>
-=======
 								</div> -->
 					</div>
 					<div class="text-center top-buffer-40">
@@ -82,72 +63,12 @@
 								<label for="senha">Senha: &nbsp;&nbsp;</label>
 								<input onKeyPress="enterLogin(event)" class="form-control" id="senha" name="senha" type="password">
 							</div>
->>>>>>> 3f7e7d1d68d30c620624053db510ae4bc0a96373
 
-									<div class="top-buffer-20 clearfix">
-										<input id="persist_box" value="1" name="persistent" class="uiInputLabelInput uiInputLabelCheckbox" type="checkbox">
-										<label for="persist_box" style="font-weight: normal">Mantenha-me conectado</label>
-									</div>
-
-<<<<<<< HEAD
-									<div class="text-center top-buffer-20">
-										<button type="submit" class="btn btn-success" onclick="enterPaginaLogin()">Entrar</button>
-										<div id="register_link" style="display: inline-block">ou
-											<strong>
-												<a href="#">Cadastre-se</a>
-											</strong>
-										</div>
-									</div>
-
-									<p class="form_row top-buffer-20">
-										<a href="#">Esqueceu sua senha?</a>
-									</p>
-								</div>
+							<div class="top-buffer-20 clearfix">
+								<input id="persist_box" value="1" name="persistent" class="uiInputLabelInput uiInputLabelCheckbox" type="checkbox">
+								<label for="persist_box" style="font-weight: normal">Mantenha-me conectado</label>
 							</div>
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	<script>
-		var CapsLock=(function(){
-		var _1=false;
-		var _2=[];
-		var _3=/Mac/.test(navigator.platform);
-		function _4(){
-		return _1;
-		};
-		function _5(_6){
-		_2.push(_6);
-		};
-		function _7(e){
-		if(!e){
-		e=window.event;
-		}
-		var _8=_1;
-		var _9=(e.charCode?e.charCode:e.keyCode);
-		if(_9>=97&&_9<=122){
-		_1=e.shiftKey;
-		}else{
-		if(_9>=65&&_9<=90&&!(e.shiftKey&&_3)){
-		_1=!e.shiftKey;
-		}
-		}
-		if(_1!=_8){
-		for(var _a=0;_a<_2.length;_a++){
-		_2[_a](_1);
-		}
-		}
-		};
-		if(window.addEventListener){
-		window.addEventListener("keypress",_7,false);
-		}else{
-		document.documentElement.attachEvent("onkeypress",_7);
-		}
-		return {isOn:_4,addListener:_5};
-		})();
-=======
 							<div class="text-center top-buffer-20">
 								<button type="submit" class="btn btn-success" onclick="enterPaginaLogin();login();">Entrar</button>
 								<div id="register_link" style="display: inline-block">ou
@@ -171,20 +92,16 @@
 
 		<!-- Rodapé -->
 		<footer class="top-buffer-40"></footer>
->>>>>>> 3f7e7d1d68d30c620624053db510ae4bc0a96373
 
 		<script>
 			$('nav').load('includes/navbar_login.html');
 			$('footer').load('includes/footer.html');
-
 			if (pegarLogin()) {
 				location.href = 'index.html';
 			}
-
 			if (document.location.hash.indexOf("erro") != -1) {
 				enterPaginaLogin();
 			}
-
 			$(window).on('hashchange', function() {
 			  enterPaginaLogin();
 			});
