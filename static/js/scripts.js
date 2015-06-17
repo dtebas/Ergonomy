@@ -27,6 +27,17 @@ function enterLogin(e) {
 		login();
 	}
 }
+
+function enterLogin () {
+	var usuario = document.getElementById('emailLogin');
+	var senha = document.getElementById('passLogin');
+	if(usuario.value == ""){
+		mostrar('error-box');
+		mostrar('error-email');
+	}
+
+}
+
 function limpar(){
 	var nome = document.getElementById('nome');
 	nome.value = "";
@@ -67,11 +78,19 @@ function mensagemErroCadastro(){
 	
 	if(mensagem != "")
 		alert(mensagem);
-	else
-		mostrar();
+	else{
+		mostrar('confirmation_cadastro');
+		ocultar('container_cadastro')
+	}
+
 }
 //setTimeout ("voltar()", 20000);*/
-function mostrar(){
-	document.getElementById('confirmation_cadastro').style.display = 'block'
-	document.getElementById('container_cadastro').style.display ='none';
+function mostrar(pagename){
+	document.getElementById( pagename ).style = {
+        visibility: "visible",
+        display: el.style.display === "none" ? "inline" : "visible"
+    }
+}
+function ocultar (pagename) {
+	document.getElementById( pagename ).style.display = 'none';
 }

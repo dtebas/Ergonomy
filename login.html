@@ -20,32 +20,36 @@
 		<div class="row top-buffer-30">
 			<div class="col-md-12 text-center">
 				<div class="login-box">
-					<div class="error-box">
-						<div>E-mail incorreto</div>
-						<div>
-							<p>O e-mail digitado não pertence a nenhuma conta.</p>
-							<p>Você pode fazer login usando qualquer e-mail, nome de usuário
-								ou número de celular associado à sua conta. Certifique-se de que
-								a digitação está correta.</p>
-						</div>
-						<div>
-							<p>Digite sua senha novamente</p>
-							<p>A senha que você digitou está incorreta. Tente novamente (tenha
-								certeza de que a função Caps Lock está desligada)./<p>
-								<p>Esqueceu sua senha?
-									<a href="#">Solicite uma nova.</a>
-								</p>
-						</div>
-					</div>
+					<div class="error-box" id="error-box" style="display:none">
+						<div id="error-email" style="display:none">
+							<div>E-mail incorreto</div>
+							<div>
+								<p>O e-mail digitado não pertence a nenhuma conta.</p>
+								<p>Você pode fazer login usando qualquer e-mail, nome de usuário
+									ou número de celular associado à sua conta. Certifique-se de que
+									a digitação está correta.</p>
+								</div>
+							</div>
+							<div id="error-pass" style="diplay:none">
+								<div>
+									<p>Digite sua senha novamente</p>
+									<p>A senha que você digitou está incorreta. Tente novamente (tenha
+										certeza de que a função Caps Lock está desligada)./<p>
+										<p>Esqueceu sua senha?
+											<a href="#">Solicite uma nova.</a>
+										</p>
+									</div>
+								</div>
+							</div>
 					<div class="text-center top-buffer-40">
 						<div style="font-size:1.1em">
 
 							<div class="text-left" style="max-width:300px;margin:auto">
 								<label for="email">E-mail: &nbsp;&nbsp;</label>
-								<input onkeypress="caps(this)" class="form-control" id="email" name="email" tabindex="1" type="text">
+								<input onkeypress="caps(this)" class="form-control" id="emailLogin" name="email" tabindex="1" type="text">
 								<br />
 								<label for="pass">Senha: &nbsp;&nbsp;</label>
-								<input onkeypress="caps" name="pass" id="pass" class="form-control" tabindex="1" type="password">
+								<input onkeypress="caps" class="form-control" id="passLogin" name="pass" tabindex="1" type="password">
 							</div>
 
 							<div class="top-buffer-20 clearfix">
@@ -54,7 +58,7 @@
 							</div>
 
 							<div class="text-center top-buffer-20">
-								<button type="submit" class="btn btn-success">Entrar</button>
+								<button type="submit" class="btn btn-success" onclick="enterLogin()">Entrar</button>
 								<div id="register_link" style="display: inline-block">ou
 									<strong>
 										<a href="#">Cadastre-se</a>
