@@ -70,7 +70,7 @@
 							</div>
 
 							<div class="text-center top-buffer-20">
-								<button type="submit" class="btn btn-success" onclick="enterPaginaLogin()">Entrar</button>
+								<button type="submit" class="btn btn-success" onclick="enterPaginaLogin();login();">Entrar</button>
 								<div id="register_link" style="display: inline-block">ou
 									<strong>
 										<a href="cadastro.html">Cadastre-se</a>
@@ -104,6 +104,10 @@
 			if (document.location.hash.indexOf("erro") != -1) {
 				enterPaginaLogin();
 			}
+
+			$(window).on('hashchange', function() {
+			  enterPaginaLogin();
+			});
 		</script>
 	</body>
 	</html>
