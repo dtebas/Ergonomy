@@ -28,13 +28,12 @@ function enterLogin(e) {
 	}
 }
 
-function enterLogin () {
+function enterPaginaLogin () {
 	var usuario = document.getElementById('emailLogin');
 	var senha = document.getElementById('passLogin');
-	if(usuario.value == ""){
+	if(usuario.value == "")
 		mostrar('error-box');
 		mostrar('error-email');
-	}
 
 }
 
@@ -85,12 +84,9 @@ function mensagemErroCadastro(){
 
 }
 //setTimeout ("voltar()", 20000);*/
-function mostrar(pagename){
-	document.getElementById( pagename ).style = {
-        visibility: "visible",
-        display: el.style.display === "none" ? "inline" : "visible"
-    }
+function mostrar(paginaname){
+	document.getElementById( paginaname ).style.display = 'block'
 }
-function ocultar (pagename) {
-	document.getElementById( pagename ).style.display = 'none';
+function ocultar (paginaname) {
+	document.getElementById( paginaname ).style.display = 'none';
 }
