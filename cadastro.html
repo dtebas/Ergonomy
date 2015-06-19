@@ -21,11 +21,8 @@
     <!-- Importado -->
       <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-      <div class="navbar-form navbar-right">
-        <a href="login.html" class="btn btn-success">Login</a>
-      </div>
       <div class="navbar-header">
-        <a class="navbar-brand" href="index.html" style="color:#333;font-size:1.8em;font-weight:800">Ergonomy</a>
+        <a class="navbar-brand" href="index.html" style="color:#333;font-size:1.8em;font-weight:800">PECCA2</a>
       </div>
     </div>
   </nav>
@@ -45,8 +42,17 @@
           <h7>
             <p>Para proceder seu cadastro preencha o formulário abaixo tomando o cuidado de completar os campos obrigatórios (com asterisco).</p>
           </h7>
-          <div class="col-md-6 top-buffer-30">
-            <form>
+          </div>
+          <div id="error-in-cadastro" class="error-box top-buffer-20 bottom-buffer-20 col-md-6 navbar-right" style="display:none">
+            <div id="error-senhasiguais-cadastro" style="display:none">
+              <strong> Senha: </strong>
+              <div>
+                <p>O valor inserido no campo 'Nova Senha' e diferente que o valor inserido no campo 'Insira novamente sua senha'</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <form method="POST" action="" onsubmit="mensagemErroCadastro()" class="top-buffer-30">
               <div> 
                 <label for="nome">Nome:<sup class="req">*</sup></label>
                 <input type="text" required class="form-control" name="nome" id="nome" />
@@ -71,9 +77,10 @@
                 <input type="password" requeired  class="form-control" name="senhaconf" id="senhaconf" >
               </div>
               <div class="top-buffer-40">
-                <button type="button" class="btn btn-success" onClick="mensagemErroCadastro()">Enviar</button>
+                <button type="submit" class="btn btn-primary size-normal"><i class="fa fa-paper-plane" style="margin-right: 8px"></i> Enviar mensagem</button>
+                <!--<button type="button" class="btn btn-success" onClick="mensagemErroCadastro()">Enviar</button>-->
                 &nbsp;
-                <a onclick="limpar()" class="btn btn-default">Limpar</a>
+                <a onclick="limpar()" class="btn btn-default size-normal" style="margin-right: 8px">Limpar</a>
               </div>
             </form>
           </div>

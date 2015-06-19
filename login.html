@@ -96,15 +96,12 @@
 		<script>
 			$('nav').load('includes/navbar_login.html');
 			$('footer').load('includes/footer.html');
-
 			if (pegarLogin()) {
 				location.href = 'index.html';
 			}
-
 			if (document.location.hash.indexOf("erro") != -1) {
 				enterPaginaLogin();
 			}
-
 			$(window).on('hashchange', function() {
 			  enterPaginaLogin();
 			});
