@@ -8390,6 +8390,9 @@ footer {
 .google-plus {
   color: #CE2621; }
 
+.github {
+  color: #333333; }
+
 /* Campo required */
 sup.req {
   color: #D00;
@@ -8443,5 +8446,25 @@ sup.req {
   .navbar-form, .navbar-collapse {
     background: #333;
     border: 0; } }
+/* Sobre o curso */
+.curso-image {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border: 6px solid #FFF;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1); }
+
+/* Meu perfil */
+table.perfil td {
+  padding: 5px 0px; }
+
+.strong {
+  font-weight: bold; }
+
+/* Meus cursos */
+table.cursos td {
+  padding: 5px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=estilo.css.map */

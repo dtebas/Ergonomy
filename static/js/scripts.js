@@ -4,7 +4,13 @@ function pegarLogin() {
 
 function logar() {
 	document.cookie = 'login=1;';
-	location.href = 'index.html';
+	if (document.location.href.indexOf('login') > -1) {
+		location.href = 'index.html';
+	}
+	else {
+		location.href = document.location.href;
+	}
+	
 }
 
 function deslogar() {

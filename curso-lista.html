@@ -27,17 +27,14 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox" style="height: 190px">
             <div class="item active">
-              <div class="slide" style="background:url(static/imgs/bg1.jpg);background-size:cover;background-position: center center">
+              <div class="slide" style="background:url(static/imgs/bg2.jpg);background-size:cover;background-position: center center">
                 <div class="container">
-                    <h1 class="top-buffer-60">MBA em Stanford</h1><br />
+                    <h1 class="top-buffer-60">Curso de Metodologias Ágeis</h1><br />
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
-
 
     </div>
     <!-- /Importado -->
@@ -46,25 +43,30 @@
       <!-- Example row of columns -->
       <div class="row top-buffer-30">
         <div class="col-md-6">
-          <h2>Sobre o curso MBA em Stanford</h2>
+          <h2>Sobre o curso Metodologias Ágeis</h2>
           <p class="size-normal top-buffer-20">
-            Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet.
-            Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet.
-            Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet.
+            O curso de Extreme Programming: metodologia ágil de desenvolvimento de software, por meio da Educação a Distância oferece ao profissional gerente de TI, desenvolvedores, programadores a metodologia XP e muito mais.
           </p>
          
           
-          <p class="top-buffer-20"><h3>Inscrições abertas turma 2016</h3></p>
+          <p class="top-buffer-20"><h3>Inscrições encerradas<br >Confira o resultado abaixo</h3></p>
 
-          <p class="size-normal top-buffer-40">
-            <strong>Início previsto: &nbsp;&nbsp; Janeiro</strong><br />
-            <strong>Carga horária: &nbsp;&nbsp;&nbsp; 600h</strong><br />
-            <strong>Investimento: &nbsp;&nbsp;&nbsp; R$ 2.222,00</strong><br />
+          <p class="top-buffer-20">
+            <div id="deslogado" style="display:none">
+              <button disabled class="top-buffer-30 btn btn-primary size-normal"><strong>Não é mais possível se inscrever</strong></button>
+            </div>
+            <div id="logado" style="display:none">
+              <button disabled class="top-buffer-30 btn btn-primary size-normal"><strong>Você já está inscrito neste curso</strong></button>
+              <br />
+              <a href="comprovante.pdf" target="_blank" class="top-buffer-30 btn btn-default size-normal">Ver comprovante de inscrição</a>
+
+            </div>
           </p>
+          
         </div>
 
         <div class="col-md-6">
-          <iframe class="top-buffer-70" width="100%" height="315" src="https://www.youtube.com/embed/siKaNqAtFP8" frameborder="0" allowfullscreen></iframe>
+          <iframe class="top-buffer-70" width="100%" height="315" src="https://www.youtube.com/embed/PUtAoI86_eI" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -74,34 +76,62 @@
       <div class="row top-buffer-80">
         <div class="col-md-8">
           <h3>Lista de alunos aprovados</h3>
-          <table class="top-buffer-40" width="100%">
+          <table class="top-buffer-40" width="100%" style="font-size: 1.2em">
             <thead>
               <tr>
                 <th>Nome</th>
-                <th>Data</th>
                 <th>GRR</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>LUIS RICARDO METRING GONÇALVES</td>
-                <td>12/12/2012</td>
+                <td>GRR20127541</td>
+              </td>
+
+              <tr>
+                <td>DANIEL PEDERNERA PARADA</td>
+                <td>GRR20127541</td>
+              </td>
+
+              <tr>
+                <td>DOUGLAS FELIPE DA SILVA TEBAS</td>
+                <td>GRR20127541</td>
+              </td>
+
+              <tr>
+                <td>LUIS RICARDO METRING GONÇALVES</td>
+                <td>GRR10127541</td>
+              </td>
+
+              <tr>
+                <td>DANIEL PEDERNERA PARADA</td>
+                <td>GRR10127541</td>
+              </td>
+
+              <tr>
+                <td>DOUGLAS FELIPE DA SILVA TEBAS</td>
                 <td>GRR10127541</td>
               </td>
 
               <tr>
                 <td>LUIS RICARDO METRING GONÇALVES</td>
-                <td>12/12/2012</td>
                 <td>GRR10127541</td>
               </td>
 
               <tr>
-                <td>LUIS RICARDO METRING GONÇALVES</td>
-                <td>12/12/2012</td>
+                <td>DANIEL PEDERNERA PARADA</td>
+                <td>GRR10127541</td>
+              </td>
+
+              <tr>
+                <td>DOUGLAS FELIPE DA SILVA TEBAS</td>
                 <td>GRR10127541</td>
               </td>
             </tbody>
           </table>
+
+          <br /><br /><br />
         </div>
 
         <!-- Preencher com a lista aqui -->
@@ -117,6 +147,13 @@
     <script>
       $('footer').load('includes/footer.html');
       $('nav').load('includes/navbar.html');
+
+      if (pegarLogin()) {
+        $('#logado').show();
+      }
+      else {
+        $('#deslogado').show();
+      }
     </script>
 
   </body>
