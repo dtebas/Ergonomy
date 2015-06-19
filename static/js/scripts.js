@@ -50,6 +50,7 @@ function limpar(){
 	pass.value = "";
 	var pass2 = document.getElementById('senhaconf');
 	pass2.value = ""; 
+	ocultar('error-in-cadastro');
 }
 
 
@@ -60,30 +61,26 @@ function voltar() {
 } 
 
 function mensagemErroCadastro(){
-	var nome = document.getElementById('nome');
-	var sobrenome = document.getElementById('sobrenome');
-	var email = document.getElementById('email');
 	var pass = document.getElementById('senha');
 	var pass2 = document.getElementById('senhaconf');
-	var mensagem = "";
-	if(nome.value == "")
-		mensagem += "'Nome' é obrigatório.";
-	if(sobrenome.value == "")
-		mensagem += "\n'Sobrenome' é obrigatório.";
-	if(email.value == "")
-		mensagem += "\n'E-mail' é obrigatório.";
-	if(pass.value == "")
-		mensagem += "\n'Senha' é obrigatória";
-	if(pass2.value == "")
-		mensagem += "\n'Confirmação da senha' é obrigatória";
-	
-	if(mensagem != "")
-		alert(mensagem);
-	else{
-		mostrar('confirmation_cadastro');
-		ocultar('container_cadastro')
-	}
+	var erro = false;
 
+	if(pass.value == "" && pass.value != pass2.value)
+	{
+		mostrar('error-senhasiguais-cadastro');
+		mostrar('error-in-cadastro');
+		erro = true;
+	}
+	else{
+		ocultar('error-senhasiguais-cadastro');
+		ocultar('error-in-cadastro');
+		erro = false;
+	}
+	if(!erro){
+		ocultar('container_cadastro');
+		ocultar('error-in-cadastro');
+		mostrar('confirmation_cadastro');
+	}
 }
 //setTimeout ("voltar()", 20000);*/
 function mostrar(paginaname){

@@ -8443,6 +8443,37 @@ sup.req {
 
 .bottom-buffer-80 {
   margin-bottom: 80px !important; }
+
+.width-buffer-10 {
+  width: 8.9% !important; }
+
+.width-buffer-20 {
+  width: 18.9% !important; }
+
+.width-buffer-30 {
+  width: 28.9% !important; }
+
+.width-buffer-40 {
+  width: 38.9% !important; }
+
+.width-buffer-50 {
+  width: 48.9% !important; }
+
+.width-buffer-60 {
+  width: 58.9% !important; }
+
+.width-buffer-70 {
+  width: 68.9% !important; }
+
+.width-buffer-80 {
+  width: 78.9% !important; }
+
+.width-buffer-90 {
+  width: 88.9% !important; }
+
+.width-buffer-100 {
+  width: 98.9% !important; }
+
 /* Cadastro */
 #formulariocadastro {
   border: 0px dotted #CCC;
@@ -8468,3 +8499,21 @@ sup.req {
     border: 0; } }
 
 /*# sourceMappingURL=estilo.css.map */
+
+.form-control-inline {
+  display: inline;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }

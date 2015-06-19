@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Ergonomia</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="static/imgs/favicon.ico"/>
+    <!-- CSS -->
+    <link href="static/css/estilo.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Js no head -->
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/scripts.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Importado -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html" style="color:#333;font-size:1.8em;font-weight:800">Ergonomy</a>
+      </div>
+    </div>
+  </nav>
+    <!-- /Importado -->
+    <div class="container top-buffer-70">
+      <div class="row top-buffer-30">
+        <div class="col-md-12">
+          
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Cadastro</li>
+          </ol>
+
+          <h2>Inscrição</h2>
+          
+          <div id="container_cadastro">
+          <h7>
+            <p>Para proceder seu cadastro preencha o formulário abaixo tomando o cuidado de completar os campos obrigatórios (com asterisco).Na sequência confirmaremos sua inscrição através do e-mail informado.</p>
+            <p>Investimento: 18 parcelas mensais e consecutivas de R$ 480,00 (quatrocentos e oitenta reais) **</p>
+          </h7>
+          </div>
+          <div class="col-md-6">
+            <form method="POST" action="" onsubmit="mensagemErroCadastro()" class="top-buffer-30">
+              <div> 
+                <label for="nome">Nome:<sup class="req">*</sup></label>
+                <input type="text" required class="form-control" name="nome" id="nome" />
+              </div>
+
+              <div class="top-buffer-20">
+                <label for="ultimonome">Último Nome:<sup class="req">*</sup></label> 
+                <input type="text" required class="form-control" name="ultimonome" id="ultimonome" >
+              </div>
+
+              <div class="top-buffer-20"> 
+                <label for="rg">RG:<sup class="req">*</sup></label>
+                <input type="text" required class="form-control" name="rg" id="rg" />
+              </div>
+
+              <div class="top-buffer-20"> 
+                <label for="cpf">CPF:<sup class="req">*</sup></label>
+                <input type="text" required class="form-control" name="cpf" id="cpf" />
+              </div>
+              
+              <div class="top-buffer-20">
+                <label for="email">E-mail<sup class="req">*</sup></label>
+                <input type="text" required class="form-control" name="email" id="email" >
+              </div>
+
+              <div class="top-buffer-20">
+                <label for="telefone">Telefone:</label>
+                <input type="text" class="form-control" name="telefone" id="telefone" />
+              </div>
+
+              <div class="top-buffer-20">
+                <label for="celular">Celular:</label>
+                <input type="text" class="form-control" name="celular" id="celular" />
+              </div>
+
+              <div class="top-buffer-20"> 
+                <label for="endereco">Endereço (rua, número e complemento):<sup class="req">*</sup></label>
+                <br><input type="text" required class="form-control-inline width-buffer-40" name="endereco" id="endereco" />
+                <input type="text" required class="form-control-inline width-buffer-20" name="endereco" id="endereco" />
+                <input type="text" required class="form-control-inline width-buffer-40" name="endereco" id="endereco" />
+              </div>
+
+              <div class="top-buffer-20">
+                <label for="bairro">Bairro:</label>
+                <input type="text" class="form-control" name="bairro" id="bairro" />
+              </div>
+
+              <div class="top-buffer-20">
+                <label for="cidade">Cidade:<sup class="req">*</sup></label> 
+                <input type="text" required class="form-control" name="cidade" id="cidade" >
+              </div>
+
+              <div class="top-buffer-20">
+                <label for="estado">Estado:<sup class="req">*</sup></label> 
+                <select name="estado" class="form-control" size=1 > 
+                  <option value="estado">Selecione o Estado</option> 
+                  <option value="ac">Acre</option> 
+                  <option value="al">Alagoas</option> 
+                  <option value="am">Amazonas</option> 
+                  <option value="ap">Amapá</option> 
+                  <option value="ba">Bahia</option> 
+                  <option value="ce">Ceará</option> 
+                  <option value="df">Distrito Federal</option> 
+                  <option value="es">Espírito Santo</option> 
+                  <option value="go">Goiás</option> 
+                  <option value="ma">Maranhão</option> 
+                  <option value="mt">Mato Grosso</option> 
+                  <option value="ms">Mato Grosso do Sul</option> 
+                  <option value="mg">Minas Gerais</option> 
+                  <option value="pa">Pará</option> 
+                  <option value="pb">Paraíba</option> 
+                  <option value="pr">Paraná</option> 
+                  <option value="pe">Pernambuco</option> 
+                  <option value="pi">Piauí</option> 
+                  <option value="rj">Rio de Janeiro</option> 
+                  <option value="rn">Rio Grande do Norte</option> 
+                  <option value="ro">Rondônia</option> 
+                  <option value="rs">Rio Grande do Sul</option> 
+                  <option value="rr">Roraima</option> 
+                  <option value="sc">Santa Catarina</option> 
+                  <option value="se">Sergipe</option> 
+                  <option value="sp">São Paulo</option> 
+                  <option value="to">Tocantins</option> 
+                </select> 
+
+              </div>
+              
+              <div class="top-buffer-20">
+                <label for="cep">CEP<sup class="req">*</sup></label>
+                <input type="text" requeired class="form-control" name="cep" id="cep" >
+              </div>
+              
+              <div class="top-buffer-20">
+                <label for="como-conheceu">Como conheceu o curso? <sup class="req">*</sup></label>
+                <br><input type="radio" value="0" name="como-conheceu"> Google
+                <br><input type="radio" value="0" name="como-conheceu"> Facebook
+                <br><input type="radio" value="0" name="como-conheceu"> Email
+                <br><input type="radio" value="0" name="como-conheceu"> Aluno Retorno
+                <br><input type="radio" value="0" name="como-conheceu"> Indicação
+              </div>
+
+              <div class="top-buffer-20">
+                <label for="tem-convenio">Tem Convenio ? <sup class="req">*</sup></label>
+                <br><input type="radio" value="0" name="tem-convenio"> Sim
+                <br><input type="radio" value="0" name="tem-convenio"> Não
+              </div>
+
+              <div class="top-buffer-40">
+                <button type="submit" class="btn btn-primary size-normal"><i class="fa fa-pencil-square-o" style="margin-right: 8px"></i> inscrever-se</button>
+                <!--<button type="button" class="btn btn-success" onClick="mensagemErroCadastro()">Enviar</button>-->
+                &nbsp;
+                <a onclick="limpar()" class="btn btn-default size-normal" style="margin-right: 8px">Limpar</a>
+              </div>
+            </form>
+          </div>
+          <div class="top-buffer-80 col-md-12">
+              <p>* consulte cronograma para conferir as datas de aulas que poderão ter intervalos diferenciados devido à feriados e recessos.</p>
+              <p>** o pagamento deverá  ser realizado através de Guias de Recolhimento da União (GRU) conforme contrato a ser firmado entre o aluno e a Universidade Federal do Paraná. O não pagamentos das GRUs emitidas poderá implicar em inscrição na Dívida Ativa da União.</p>
+            </div>
+          </div>
+          <div id="confirmation_cadastro" style="display:none">
+            <h7> Seu cadastro foi realizado com êxito, enviaremos um email de confirmacão</h7>
+            <div class="top-buffer-20">
+              <button type="button" class="btn btn-success top-buffer-40" onClick="voltar()"></button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /container -->
+    </div>
+
+
+    
+
+
+    <!-- Rodapé -->
+    <footer class="top-buffer-40"></footer>
+
+    <script>
+      $('footer').load('includes/footer.html');
+
+      jQuery(function($){
+        $("#telefone").mask("(99) 9999-9999?9");
+        $("#cpf").mask("999.999.999-99");
+        $("#rg").mask("99.999.999-9");
+        $("#cep").mask("99.999-999");
+        $("#homenro").mask("");
+      });
+
+    </script>
+
+  </body>
+</html>
