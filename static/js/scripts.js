@@ -66,32 +66,36 @@ function voltar() {
 		location.href=pagina
 } 
 
-function mensagemErroCadastro(){
+function mensagemErroCadastro() {
 	var pass = document.getElementById('senha');
 	var pass2 = document.getElementById('senhaconf');
 	var erro = false;
 
-	if(pass.value == "" && pass.value != pass2.value)
+	if (pass.value == "" || pass.value != pass2.value)
 	{
 		mostrar('error-senhasiguais-cadastro');
 		mostrar('error-in-cadastro');
 		erro = true;
 	}
-	else{
+	else {
 		ocultar('error-senhasiguais-cadastro');
 		ocultar('error-in-cadastro');
 		erro = false;
 	}
-	if(!erro){
+
+	if (!erro){
 		ocultar('container_cadastro');
 		ocultar('error-in-cadastro');
+		ocultar('formulario');
 		mostrar('confirmation_cadastro');
 	}
+	location.href='#';
+	return false;
 }
-//setTimeout ("voltar()", 20000);*/
-function mostrar(paginaname){
+
+function mostrar(paginaname) {
 	document.getElementById( paginaname ).style.display = 'block'
 }
-function ocultar (paginaname) {
+function ocultar(paginaname) {
 	document.getElementById( paginaname ).style.display = 'none';
 }

@@ -22,7 +22,7 @@
       <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="index.html" style="color:#333;font-size:1.8em;font-weight:800">PECCA2</a>
+        <a class="navbar-brand" href="index.html" style="color:#333;font-size:1.8em;font-weight:800">Ergonomy</a>
       </div>
     </div>
   </nav>
@@ -52,7 +52,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <form method="POST" action="" onsubmit="mensagemErroCadastro()" class="top-buffer-30">
+            <form method="POST" action="" id="formulario" onsubmit="mensagemErroCadastro()" class="top-buffer-30">
               <div> 
                 <label for="nome">Nome:<sup class="req">*</sup></label>
                 <input type="text" required class="form-control" name="nome" id="nome" />
@@ -77,7 +77,7 @@
                 <input type="password" requeired  class="form-control" name="senhaconf" id="senhaconf" >
               </div>
               <div class="top-buffer-40">
-                <button type="submit" class="btn btn-primary size-normal"><i class="fa fa-paper-plane" style="margin-right: 8px"></i> Enviar mensagem</button>
+                <button type="button" onclick="mensagemErroCadastro()" class="btn btn-success size-normal"><i class="fa fa-check" style="margin-right: 8px"></i> Efetuar cadastro</button>
                 <!--<button type="button" class="btn btn-success" onClick="mensagemErroCadastro()">Enviar</button>-->
                 &nbsp;
                 <a onclick="limpar()" class="btn btn-default size-normal" style="margin-right: 8px">Limpar</a>
@@ -86,10 +86,19 @@
           </div>
           </div>
           <div id="confirmation_cadastro" style="display:none">
-            <h7> Seu cadastro foi realizado com êxito, enviaremos um email de confirmacão</h7>
-            <div class="top-buffer-20">
+            <div class="col-md-6">
+              <h4>Seu cadastro foi realizado com êxito!
+                <br />
+                Te enviaremos um email de confirmacão.
+                <br /><br />
+
+                <a href="javascript:logar();location.href='index.html';">Clique aqui para fazer o login</a>
+                <br /><br /><br /><br /><br /><br /><br />
+              </h4>
+              </div>
+            <!-- <div class="top-buffer-20">
               <button type="button" class="btn btn-success top-buffer-40" onClick="voltar()"></button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div> <!-- /container -->
